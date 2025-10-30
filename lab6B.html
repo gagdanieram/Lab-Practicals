@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bouncing Loader & Flex Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      text-align: center;
+    }
+    /* ========== B. Responsive Photo Gallery with Flex ========== */
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery-item {
+      flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+      max-width: 250px;
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 6px;
+    }
+      </style>
+</head>
+<body>
+      <!-- B. Photo Gallery -->
+  <h2>Responsive Photo Gallery using Flex</h2>
+  <div class="gallery-container">
+    <div class="gallery-item"><img src="Image/cat.jpeg" alt="Gallery 1"></div>
+    <div class="gallery-item"><img src="Image/image 1.jpeg" alt="Gallery 2"></div>
+    <div class="gallery-item"><img src="Image/image 7.jpeg" alt="Gallery 3"></div>
+    <div class="gallery-item"><img src="Image/image 2.jpeg" alt="Gallery 4"></div>
+    <div class="gallery-item"><img src="Image/image 3.jpeg" alt="Gallery 5"></div>
+    <div class="gallery-item"><img src="Image/image 4.jpeg" alt="Gallery 6"></div>
+    <div class="gallery-item"><img src="Image/image 5.jpeg" alt="Gallery 7"></div>
+    <div class="gallery-item"><img src="Image/image 6.jpeg" alt="Gallery 8"></div>
+  </div>
+</body>
+</html>
+

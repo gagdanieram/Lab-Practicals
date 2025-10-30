@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bouncing Loader & Flex Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      text-align: center;
+    }
+        /* ========== C. Flex Properties Demonstration ========== */
+    .flex-demo {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+      background: #fff;
+      margin: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .flex-child {
+      background: #007bff;
+      color: white;
+      padding: 20px;
+      border-radius: 6px;
+      flex: 1; /* Each child takes equal space */
+      margin: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+      <!-- C. Flex Properties -->
+  <h2>Flex Property Demonstration</h2>
+  <div class="flex-demo">
+    <div class="flex-child">Flex 1</div>
+    <div class="flex-child">Flex 2</div>
+    <div class="flex-child">Flex 3</div>
+  </div>
+
+</body>
+</html>
